@@ -1,0 +1,43 @@
+.main {
+    background-color: #aeeeee;
+}
+
+.main_search {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.icon {
+    width: 25px;
+    height: 24px;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid gainsboro;
+}
+
+.search_input {
+    height: 30px;
+    background-color: #fff;
+    border-color:aqua;
+    width: 360px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .icon {
+        width: 15px;
+        height: 14px;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid gainsboro;
+    }
+    .search_input {
+        height: 20px;
+        background-color: #fff;
+        border-color:aqua;
+        width: 220px;
+    }
+}
