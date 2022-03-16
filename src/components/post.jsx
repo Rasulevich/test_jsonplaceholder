@@ -1,23 +1,8 @@
 import React from "react";
-import { useEffect,useState } from "react";
 import './post.css';
 
-export const Post = ({getPostsResult,authors,value}) => {
-    const[postsWithAuthorName, setPostWithAuthorName] = useState([]);
-    useEffect(()=>{
-        getPostsResult.map(el => {
-            authors.map(author => {
-                if (el.userId === author.id){
-                    el.name = author.name
-                } 
-            })
-        })
-        setPostWithAuthorName(getPostsResult);
-    },[getPostsResult,authors])
-    
-    const filteredAuthors = postsWithAuthorName.filter(post => {
-        return post.name.includes(value)
-    })
+export const Post = ({filteredAuthors}) => {
+
     return (
         <div className="posts">
             {filteredAuthors.map((el,index) => {

@@ -1,13 +1,9 @@
 import React from "react";
-import { useState } from "react";
-import { Posts } from "./posts";
 import './search.css';
 import img from '../img/search.com.png';
-export const Search = () => {
-    
-    const [value, setValue] = useState('');
 
-  
+export const Search = ({value,setValue}) => {
+    
     return (
         <div className="main">
             <div className="main_search">
@@ -22,7 +18,6 @@ export const Search = () => {
                     </input>
                 </form>
             </div>
-            <Posts value={value}/>
         </div>
     )
 }
